@@ -6,7 +6,7 @@ Summary(pl):	Narzêdzia XML dla Pythona
 Name:		python-%{short_name}
 Version:	1.3.7
 Release:	1
-License:	Unknown
+License:	unknown
 Group:		Development/Libraries
 Source0:	ftp://ftp.logilab.org/pub/xmltools/%{short_name}-%{version}.tar.gz
 # Source0-md5:	5764ccfb11e111fe8df62ba68fa8df8a
