@@ -22,8 +22,8 @@ Requires:	python-4Suite
 Url:		http://www.logilab.org/xmltools/index.html
 
 %description
-Python XmlTools is a set of high level tools to help using XML in python. It
-relies heavily on PyXml and 4Suite to access XML resources.
+Python XmlTools is a set of high level tools to help using XML in
+python. It relies heavily on PyXml and 4Suite to access XML resources.
 
 %prep
 %setup -q -n %{short_name}-%{version}
