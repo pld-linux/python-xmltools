@@ -1,5 +1,5 @@
-%define short_name xmltools
-%define python_sitepkgsdir %(echo `python -c "import sys; print (sys.prefix + '/lib/python' + sys.version[:3] + '/site-packages/')"`)
+%define	short_name		xmltools
+%define	python_sitepkgsdir	%(echo `python -c "import sys; print (sys.prefix + '/lib/python' + sys.version[:3] + '/site-packages/')"`)
 
 Summary:	Python XMLTools
 Summary(pl):	Narzêdzia XML dla Pythona
