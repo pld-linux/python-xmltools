@@ -34,12 +34,10 @@ CFLAGS="%{rpmcflags}" python setup.py build
 rm -rf $RPM_BUILD_ROOT
 python setup.py install --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
 
-gzip -9fn PKG-INFO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc PKG-INFO
 %{python_sitepkgsdir}/logilab
