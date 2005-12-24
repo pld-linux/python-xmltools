@@ -1,11 +1,10 @@
 %define	short_name		xmltools
-%define	python_sitepkgsdir	%(echo `python -c "import sys; print (sys.prefix + '/lib/python' + sys.version[:3] + '/site-packages/')"`)
 
 Summary:	Python XMLTools
 Summary(pl):	Narzêdzia XML dla Pythona
 Name:		python-%{short_name}
 Version:	1.3.7
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Libraries
 Source0:	ftp://ftp.logilab.org/pub/xmltools/%{short_name}-%{version}.tar.gz
@@ -33,7 +32,9 @@ CFLAGS="%{rpmcflags}" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT --record=INSTALLED_FILES
+python setup.py install \
+	--root=$RPM_BUILD_ROOT \
+	--record=INSTALLED_FILES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -41,4 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc PKG-INFO
-%{python_sitepkgsdir}/logilab
+%{py_sitescriptdir}/logilab
