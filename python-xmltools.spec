@@ -1,7 +1,7 @@
 %define	short_name		xmltools
 
 Summary:	Python XMLTools
-Summary(pl):	Narzêdzia XML dla Pythona
+Summary(pl.UTF-8):   NarzÄ™dzia XML dla Pythona
 Name:		python-%{short_name}
 Version:	1.4.0
 Release:	2
@@ -19,10 +19,10 @@ Requires:	python-4Suite
 Python XmlTools is a set of high level tools to help using XML in
 python. It relies heavily on PyXml and 4Suite to access XML resources.
 
-%description -l pl
-Python XmlTools to zestaw wysokopoziomowych narzêdzi pomagaj±cych przy
-u¿ywaniu XML w Pythonie. Polegaj± na PyXml i 4Suite do dostêpu do
-zasobów XML.
+%description -l pl.UTF-8
+Python XmlTools to zestaw wysokopoziomowych narzÄ™dzi pomagajÄ…cych przy
+uÅ¼ywaniu XML w Pythonie. PolegajÄ… na PyXml i 4Suite do dostÄ™pu do
+zasobÃ³w XML.
 
 %prep
 %setup -q -n %{short_name}-%{version}
