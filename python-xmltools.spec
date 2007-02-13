@@ -1,7 +1,7 @@
 %define	short_name		xmltools
 
 Summary:	Python XMLTools
-Summary(pl.UTF-8):   Narzędzia XML dla Pythona
+Summary(pl.UTF-8):	Narzędzia XML dla Pythona
 Name:		python-%{short_name}
 Version:	1.4.0
 Release:	2
