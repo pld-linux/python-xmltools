@@ -28,12 +28,11 @@ zasobów XML.
 %setup -q -n %{short_name}-%{version}
 
 %build
-CFLAGS="%{rpmcflags}" python setup.py build
+CFLAGS="%{rpmcflags}" %py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install \
-	--root=$RPM_BUILD_ROOT \
+%py_install \
 	--record=INSTALLED_FILES
 
 %clean
