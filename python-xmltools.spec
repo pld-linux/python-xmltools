@@ -10,6 +10,7 @@ Group:		Development/Libraries
 Source0:	ftp://ftp.logilab.org/pub/xmltools/%{short_name}-%{version}.tar.gz
 # Source0-md5:	1ddfaf02cb2c20a199d57700a03b2154
 URL:		http://www.logilab.org/xmltools/index.html
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	python-PyXML
